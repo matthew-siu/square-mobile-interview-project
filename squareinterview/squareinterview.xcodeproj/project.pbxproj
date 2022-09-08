@@ -39,6 +39,11 @@
 		144D910328C8590100573BE9 /* ImageLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144D910228C8590100573BE9 /* ImageLoad.swift */; };
 		144D910528C85C2400573BE9 /* GetEmptyEmployeeAPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144D910428C85C2400573BE9 /* GetEmptyEmployeeAPIRepository.swift */; };
 		144D910728C85C3500573BE9 /* GetMalFormedEmployeeAPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144D910628C85C3500573BE9 /* GetMalFormedEmployeeAPIRepository.swift */; };
+		144D911F28C9A28600573BE9 /* MainViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144D911B28C9A28500573BE9 /* MainViewControllerTests.swift */; };
+		144D912028C9A28600573BE9 /* MainInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144D911C28C9A28600573BE9 /* MainInteractorTests.swift */; };
+		144D912128C9A28600573BE9 /* MainWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144D911D28C9A28600573BE9 /* MainWorkerTests.swift */; };
+		144D912228C9A28600573BE9 /* MainPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144D911E28C9A28600573BE9 /* MainPresenterTests.swift */; };
+		144D912B28C9A68900573BE9 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 144D90D928C83A7D00573BE9 /* MainViewController.storyboard */; };
 		580CB277E4D77590B0557EDD /* Pods_squareinterviewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F38C19159DFB1E8F49E68E /* Pods_squareinterviewTests.framework */; };
 		5F40221DB2EC4E295ADA3AA9 /* Pods_squareinterview_squareinterviewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FFE12FBF7F5E375BD7631D4 /* Pods_squareinterview_squareinterviewUITests.framework */; };
 /* End PBXBuildFile section */
@@ -97,6 +102,10 @@
 		144D910228C8590100573BE9 /* ImageLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoad.swift; sourceTree = "<group>"; };
 		144D910428C85C2400573BE9 /* GetEmptyEmployeeAPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEmptyEmployeeAPIRepository.swift; sourceTree = "<group>"; };
 		144D910628C85C3500573BE9 /* GetMalFormedEmployeeAPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMalFormedEmployeeAPIRepository.swift; sourceTree = "<group>"; };
+		144D911B28C9A28500573BE9 /* MainViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerTests.swift; sourceTree = "<group>"; };
+		144D911C28C9A28600573BE9 /* MainInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractorTests.swift; sourceTree = "<group>"; };
+		144D911D28C9A28600573BE9 /* MainWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWorkerTests.swift; sourceTree = "<group>"; };
+		144D911E28C9A28600573BE9 /* MainPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTests.swift; sourceTree = "<group>"; };
 		69CAAEB1FA10F62C7C261F4E /* Pods-squareinterview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-squareinterview.release.xcconfig"; path = "Target Support Files/Pods-squareinterview/Pods-squareinterview.release.xcconfig"; sourceTree = "<group>"; };
 		7FFE12FBF7F5E375BD7631D4 /* Pods_squareinterview_squareinterviewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_squareinterview_squareinterviewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5AC3B461C1A50AA45378F90 /* Pods_squareinterview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_squareinterview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				144D90B828C8397000573BE9 /* squareinterviewTests.swift */,
+				144D911A28C9A26F00573BE9 /* MainTests */,
 			);
 			path = squareinterviewTests;
 			sourceTree = "<group>";
@@ -232,6 +242,7 @@
 		144D90D528C83A1600573BE9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				144D911128C9A22800573BE9 /* MainTests */,
 				144D90EE28C83C6300573BE9 /* EmployerCell */,
 				144D90D628C83A7D00573BE9 /* MainPresenter.swift */,
 				144D90D728C83A7D00573BE9 /* MainWorker.swift */,
@@ -280,6 +291,24 @@
 				144D910628C85C3500573BE9 /* GetMalFormedEmployeeAPIRepository.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		144D911128C9A22800573BE9 /* MainTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainTests;
+			sourceTree = "<group>";
+		};
+		144D911A28C9A26F00573BE9 /* MainTests */ = {
+			isa = PBXGroup;
+			children = (
+				144D911B28C9A28500573BE9 /* MainViewControllerTests.swift */,
+				144D911C28C9A28600573BE9 /* MainInteractorTests.swift */,
+				144D911D28C9A28600573BE9 /* MainWorkerTests.swift */,
+				144D911E28C9A28600573BE9 /* MainPresenterTests.swift */,
+			);
+			path = MainTests;
 			sourceTree = "<group>";
 		};
 		A3A9A76E7723643AF3AAD52D /* Pods */ = {
@@ -426,6 +455,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				144D912B28C9A68900573BE9 /* MainViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +607,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				144D90B928C8397000573BE9 /* squareinterviewTests.swift in Sources */,
+				144D912028C9A28600573BE9 /* MainInteractorTests.swift in Sources */,
+				144D912228C9A28600573BE9 /* MainPresenterTests.swift in Sources */,
+				144D912128C9A28600573BE9 /* MainWorkerTests.swift in Sources */,
+				144D911F28C9A28600573BE9 /* MainViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@ target 'squareinterview' do
 
   # Pods for squareinterview
   pod 'PromiseKit'
+  pod 'Kingfisher', '~> 7.0'
 
   target 'squareinterviewTests' do
     inherit! :search_paths

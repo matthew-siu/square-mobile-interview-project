@@ -49,7 +49,7 @@ extension MainViewController {
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.register(UINib(nibName: TableCell.cell.rawValue, bundle: nil), forCellReuseIdentifier: TableCell.cell.rawValue)
         
-        
+//        URLCache.shared.removeAllCachedResponses()
         
         self.initUI()
     }
@@ -74,13 +74,18 @@ extension MainViewController {
     
     func displayInitialState(vm: Main.ViewModel){
         self.showProgressBar(false)
-        if let error = vm.errMsg{
-            self.showAlert("Reminder", error, completion: nil)
-        }
         self.refreshControl.endRefreshing()
         self.vm = vm
         self.tableView.reloadData()
+        if let error = vm.errMsg{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                self.showAlert("Reminder", error, completion: nil)
+            }
+            
+        }
     }
+    
+    
 }
 
 // MARK:- View Display logic entry point
@@ -94,6 +99,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             let cell = UITableViewCell()
             cell.textLabel?.text = "No employee."
             cell.textLabel?.textAlignment = .center
+            cell.selectionStyle = .none
             return cell
         }else{
             let item = self.vm.cells[indexPath.row]
@@ -102,10 +108,6 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             }
             cell.selectionStyle = .none
             cell.setupUI(item: item)
-            
-            if let photoPath = item.photoPath, let url = URL(string: photoPath){
-                cell.imgView.loadImage(at: url)
-            }
             
             return cell
         }
