@@ -9,6 +9,7 @@ Xcode version 13.3.1
 
 1. Download the zip folder or clone the main branch from Git.
 2. All libraries from Cocoapods have already imported to the project. (Optional) You may run `pod update` to ensure all dependencies are up-to-date.
+3. Open *squareinterview.xcworkspace*
 3. For build and run, click `CMD + R`
 4. For testing, click `CMD + U`
 

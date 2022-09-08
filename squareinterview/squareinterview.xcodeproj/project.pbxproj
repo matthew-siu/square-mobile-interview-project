@@ -242,7 +242,6 @@
 		144D90D528C83A1600573BE9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				144D911128C9A22800573BE9 /* MainTests */,
 				144D90EE28C83C6300573BE9 /* EmployerCell */,
 				144D90D628C83A7D00573BE9 /* MainPresenter.swift */,
 				144D90D728C83A7D00573BE9 /* MainWorker.swift */,
@@ -291,13 +290,6 @@
 				144D910628C85C3500573BE9 /* GetMalFormedEmployeeAPIRepository.swift */,
 			);
 			path = Repositories;
-			sourceTree = "<group>";
-		};
-		144D911128C9A22800573BE9 /* MainTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MainTests;
 			sourceTree = "<group>";
 		};
 		144D911A28C9A26F00573BE9 /* MainTests */ = {
